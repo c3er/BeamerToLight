@@ -83,55 +83,55 @@ class BeamerAsLight:
                 print(self.beat)
             elif event.key == 9:
                 self.animation_direction = -1 * self.animation_direction
-            elif event.scancode == 20:
+            elif event.scancode == 20:  # T
                 self.beat = [2 * b for b in self.beat]
-            elif event.scancode == 61:
+            elif event.scancode == 61:  # F3
                 self.beat = [0.5 * b for b in self.beat]
-            elif event.scancode == 24:
+            elif event.scancode == 24:  # O
                 self.current_mood = gray
-            elif event.scancode == 25:
+            elif event.scancode == 25:  # P
                 self.current_mood = fire
-            elif event.scancode == 26:
+            elif event.scancode == 26:  # Ü
                 self.current_mood = water
-            elif event.scancode == 27:
+            elif event.scancode == 27:  # +
                 self.current_mood = green
-            elif event.scancode == 28:
+            elif event.scancode == 28:  # Enter???
                 self.current_mood = yellow
-            elif event.scancode == 29:
+            elif event.scancode == 29:  # Ctrl
                 self.current_mood = pink
-            elif event.scancode == 30:
+            elif event.scancode == 30:  # A
                 self.current_mood = red
-            elif event.scancode == 31:
+            elif event.scancode == 31:  # S
                 self.current_mood = bluered
-            elif event.scancode == 32:
+            elif event.scancode == 32:  # D
                 self.current_mood = yellowpink
-            elif event.scancode == 33:
+            elif event.scancode == 33:  # F
                 self.current_mood = brown
-            elif event.scancode == 34:
+            elif event.scancode == 34:  # G
                 self.current_mood = cyan
-            elif event.scancode == 38:
+            elif event.scancode == 38:  # L
                 self.animation = animations.single_circle
-            elif event.scancode == 39:
+            elif event.scancode == 39:  # Ö
                 self.animation = animations.horizontal_line
-            elif event.scancode == 40:
+            elif event.scancode == 40:  # Ä
                 self.animation = animations.vertical_line
             elif event.scancode == 41:
                 self.animation = animations.double_wave
             elif event.scancode == 42:
                 self.animation = animations.bony_horizontal_line
-            elif event.scancode == 43:
+            elif event.scancode == 43:  # #
                 self.animation = animations.point_circle
-            elif event.scancode == 44:
+            elif event.scancode == 44:  # Y
                 self.animation = animations.point_circle_10
-            elif event.scancode == 45:
+            elif event.scancode == 45:  # X
                 self.animation = animations.rotating_bone_1
-            elif event.scancode == 46:
+            elif event.scancode == 46:  # C
                 self.animation = animations.rotating_bones
-            elif event.scancode == 47:
+            elif event.scancode == 47:  # V
                 self.animation = animations.rotating_bone_circle
-            elif event.scancode == 48:
+            elif event.scancode == 48:  # B
                 self.animation = animations.snow
-            elif event.scancode == 51:
+            elif event.scancode == 51:  # ,
                 pass
             else:
                 if event.scancode not in self.unknown_keys_dict:
